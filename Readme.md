@@ -1,9 +1,6 @@
 text
 # README
-aa.py
-     print("This is aa")
+this line is added by xiaoming
 
-bb.py
-     print("This is bb")
 
 
