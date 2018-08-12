@@ -81,10 +81,13 @@ su xiaoming
 ```
 + 为小明用户配置git环境（ssh key添加到你的github账号里)
 ```shell
+$ git config --global user.name "xm"
+$ git init
 ```
 
 + 克隆git_project项目到
 ```shell
+$ git clone https://github.com/Renwoxin/git_project.git
 ```
 
 + 修改Readme.md为：
@@ -95,10 +98,13 @@ this line is added by xiaoming
 
 + 提交小明的修改到github上，提交信息为"chang Readme.md by xiaoming"
 ```shell
+$ git add .
+$ git commit -m "chang Readme.md by xiaoming"
 ```
 
 + 切换用户到自己的用户(heigou)
 ```shell
+重启切换
 ```
 + 修改Readme.md为：
 ```text
@@ -107,18 +113,40 @@ this line is added by heigou
 ```
 + 提交修改
 ```shell
+$ git add .
+$ git commit -m "chang Readme.md by xiaoming"
 ```
 
 + 记录报错信息
-```text
-```
 
-+ 记录解决办法
+![error1](image/error1.png)
+
+![error2](image/error2.png)
+
+![error3](image/error3.png)
+
++ 记录解决
+办法
 ```text
 ```
+![correct1](image/correct1.png)
+
+![correct2](image/correct2.png)
+
+![correct3](image/correct3.png)
+
+![correct4](image/correct4.png)
+
+![interpret](image/interpret.png)
+
+heigou@ubuntu:~/Desktop/git_project$ git add .
+heigou@ubuntu:~/Desktop/git_project$ git commit -m "chang Readme.md by heigou"
+[master 8625636] chang Readme.md by heigou
+heigou@ubuntu:~/Desktop/git_project$ git push origin master
 
 + 寻找避免此类问题发生的方法（合理的使用git进行开发的流程）
 ```text
+在用户xiaoming下add、commit、push之后，如果切换用户add、commit、push，为了避免出错，那么在push之前务必pull
 ```
 
 ## 情景三：
